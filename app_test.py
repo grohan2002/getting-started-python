@@ -12,7 +12,7 @@ class CitiesTestCase(unittest.TestCase):
     self.assertEqual(response.data, json.dumps({"cities" : ["Amsterdam", "Berlin", "New York", "San Francisco", "Tokyo", "Mumbai"]}))
     response = tester.get('/countries.json', content_type='application/json')
     self.assertEqual(response.status_code, 200)
-    self.assertEqual(response.data, json.dumps({"cities" : ["Netherlands", "Germany", "US-East", "US-West", "Tokyo", "India"]}))
+    self.assertEqual(response.data, json.dumps({"cities" : ["Netherlands", "Germany", "US-East", "US-West", "Japan", "India"]}))
 
 if __name__ == '__main__':
     unittest.main()
